@@ -1,0 +1,9 @@
+battery
+biological
+cardboard
+clothes
+glass
+metal
+paper
+plastic
+trash
