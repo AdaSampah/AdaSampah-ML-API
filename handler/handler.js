@@ -22,7 +22,7 @@ async function loadModel() {
   }
 }
 
-async function predictHandlerCleanDirty(request, h) {
+async function predictCleanDirtyHandler(request, h) {
   try {
     const file = request.payload && request.payload.image;
     if (!file) {
@@ -50,7 +50,7 @@ async function predictHandlerCleanDirty(request, h) {
   }
 }
 
-async function predictHandlerEdukasi(request, h) {
+async function predictEdukasiHandler(request, h) {
   try {
     const file = request.payload && request.payload.image;
     if (!file) {
@@ -78,4 +78,4 @@ async function predictHandlerEdukasi(request, h) {
   }
 }
 
-module.exports = { loadModel, predictHandlerCleanDirty, predictHandlerEdukasi };
+module.exports = { loadModel, predictCleanDirtyHandler, predictEdukasiHandler };

@@ -1,10 +1,10 @@
-const { predictHandlerCleanDirty, predictHandlerEdukasi } = require("../handler/handler");
+const { predictCleanDirtyHandler, predictEdukasiHandler } = require("../handler/handler");
 
 module.exports = [
   {
     method: "POST",
     path: "/predictModel1",
-    handler: predictHandlerCleanDirty,
+    handler: predictCleanDirtyHandler,
     options: {
       payload: {
         allow: "multipart/form-data",
@@ -17,7 +17,7 @@ module.exports = [
   {
     method: "POST",
     path: "/predictModel2",
-    handler: predictHandlerEdukasi,
+    handler: predictEdukasiHandler,
     options: {
       payload: {
         allow: "multipart/form-data",
