@@ -60,6 +60,8 @@ async function predictEdukasiHandler(request, h) {
     }
     const readEdukasiLabel = fs.readFileSync('./model/edukasi/label.txt', 'utf8');
     const labelEdukasi = readEdukasiLabel.split('\n').map(line => line.trim());;
+    const readDetail = fs.readFileSync('./model/edukasi/detail.json', 'utf8');
+    const jsonDetail = JSON.parse(readDetail);
     const buffer = file._data || file;
     let imageTensor = tf.node.decodeImage(buffer, 3);
     imageTensor = tf.image.resizeBilinear(imageTensor, [256, 256]);
@@ -71,7 +73,8 @@ async function predictEdukasiHandler(request, h) {
     
     return { 
         predictedLabel: labelEdukasi[indexLabel],
-        scores: probability
+        scores: probability,
+        detail: jsonDetail[labelEdukasi[indexLabel]]
      };
   } catch (err) {
     return h.response({ error: err.message }).code(400);
