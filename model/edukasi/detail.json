@@ -344,6 +344,34 @@
         }
     ]
     },
+    "shoes": {
+      "handling": "Pisahkan sepatu yang masih layak pakai dari yang benar-benar rusak. Bersihkan terlebih dahulu sebelum disumbangkan atau didaur ulang. Untuk sepatu yang sudah tidak bisa digunakan, cari tempat daur ulang tekstil atau program pengumpulan sepatu bekas.",
+      "reuse_recommendation": [
+        "Donasikan ke organisasi amal atau program bantuan bencana.",
+        "Ubah menjadi pot tanaman gantung atau wadah kreatif di rumah.",
+        "Gunakan sebagai dekorasi atau bahan kerajinan daur ulang."
+      ],
+      "articles": [
+        {
+        "title": "Cara Mendaur Ulang Sepatu Bekas Secara Bertanggung Jawab",
+        "link": "https://www.greeners.co/gaya-hidup/cara-mendaur-ulang-sepatu-bekas/",
+        "image": "https://www.greeners.co/wp-content/uploads/2021/05/sepatu-bekas.jpg",
+        "description": "Panduan praktis untuk mengelola sepatu bekas agar tidak mencemari lingkungan, mulai dari donasi hingga daur ulang kreatif."
+        },
+        {
+        "title": "5 Ide Kreatif Mengubah Sepatu Bekas Menjadi Barang Berguna",
+        "link": "https://www.zerowaste.id/blog/ide-daur-ulang-sepatu",
+        "image": "https://www.zerowaste.id/wp-content/uploads/2021/08/sepatu-daur-ulang.jpg",
+        "description": "Berbagai ide kreatif untuk mengubah sepatu bekas menjadi barang rumah tangga atau dekorasi unik yang ramah lingkungan."
+        },
+        {
+        "title": "Program Donasi Sepatu Layak Pakai di Indonesia",
+        "link": "https://soles4souls.org/id/",
+        "image": "https://soles4souls.org/wp-content/uploads/2020/11/shoe-donation.jpg",
+        "description": "Informasi tentang program donasi sepatu di Indonesia yang membantu masyarakat kurang mampu dan mengurangi limbah tekstil."
+        }
+    ]
+    },
   "trash": {
       "handling": "Kumpulkan dalam kantong tertutup. Pisahkan sampah berbahaya. Buang di TPS atau fasilitas pengelolaan akhir. Apabila sampah medis, pisahkan sampah dan taruh di kantong dengan warna mencolok.",
       "reuse_recommendations": [

@@ -6,4 +6,5 @@ glass
 metal
 paper
 plastic
+shoes
 trash
