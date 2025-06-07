@@ -48,10 +48,10 @@ async function predictCleanDirtyHandler(request, h) {
       label = 'Tidak dapat diidentifikasi'
     }
 
-    return { 
+    return h.response({ 
         predictedLabel: label,
         scores: score
-    };
+    }).code(200);
   } catch (err) {
     return h.response({ error: err.message }).code(400);
   }
@@ -81,11 +81,11 @@ async function predictEdukasiHandler(request, h) {
     const label = labelEdukasi[indexLabel]
     const probability = prediction.dataSync()[indexLabel];
     
-    return { 
+    return h.response({ 
         predictedLabel: jsonLabelIndo[label],
         scores: probability,
         detail: jsonDetail[labelEdukasi[indexLabel]]
-     };
+     }).code(200);
   } catch (err) {
     return h.response({ error: err.message }).code(400);
   }
