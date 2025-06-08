@@ -1,4 +1,7 @@
-const { predictCleanDirtyHandler, predictEdukasiHandler } = require("../handler/handler");
+const {
+  predictCleanDirtyHandler,
+  predictEdukasiHandler,
+} = require("../handler");
 
 module.exports = [
   {
