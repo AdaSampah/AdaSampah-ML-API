@@ -18,7 +18,7 @@ async function predictCleanDirtyHandler(request, h) {
     const prediction = model.predict(inputTensor);
     const score = prediction.dataSync()[0];
     let label;
-    if (score > 0.85) {
+    if (score > 0.80) {
       label = "kotor";
     } else {
       label = "bersih";
