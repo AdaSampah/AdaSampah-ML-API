@@ -18,10 +18,14 @@ async function predictCleanDirtyHandler(request, h) {
     const prediction = model.predict(inputTensor);
     const score = prediction.dataSync()[0];
     let label;
-    if (score > 0.85) {
+    if (score > 0.6) {
       label = "kotor";
-    } else {
+    } 
+    else if (score < 0.4) {
       label = "bersih";
+    }
+    else {
+      label = "tidak dapat diidentifikasi";
     }
     return h.response({ success: true, predictedLabel: label, scores: score }).code(200);
   } catch (err) {
