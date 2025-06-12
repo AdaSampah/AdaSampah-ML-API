@@ -53,7 +53,7 @@ Server akan berjalan di: `http://localhost:3000`
 **Form-Data:**
 - `image`: file gambar (jpg/png)
 
-**Response:**
+**Response Success:**
 ```json
 {
   "success": true,
@@ -62,6 +62,13 @@ Server akan berjalan di: `http://localhost:3000`
 }
 ```
 
+**Response Failed:**
+```json
+{
+  "success": false,
+  "message": error message
+}
+```
 ---
 
 ### 🔍 2. Prediksi Jenis Sampah + Rekomendasi
@@ -71,7 +78,7 @@ Server akan berjalan di: `http://localhost:3000`
 **Form-Data:**
 - `image`: file gambar (jpg/png)
 
-**Response:**
+**Response Success:**
 ```json
 {
   "success": true,
@@ -96,6 +103,14 @@ Server akan berjalan di: `http://localhost:3000`
         }
         ]
       }
+}
+```
+
+**Response Failed:**
+```json
+{
+  "success": false,
+  "message": error message
 }
 ```
 
